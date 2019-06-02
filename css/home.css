@@ -1,0 +1,399 @@
+/*----- ESTILO GLOBAL -----*/
+html, body {
+	background-color: #000;
+	color: #fff;
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 100%;
+}
+
+.row {
+	margin: 0;
+}
+
+
+
+
+
+/*----- TELA DE CARREGAMENTO -----*/
+#loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+	z-index: 5;
+}
+
+#loader-wrapper img {
+  width: 150px;
+}
+
+
+
+
+
+/*----- MENU LATERAL -----*/
+#lateral-menu {
+	background-color: #111;
+	color: #fff;
+	position: fixed;
+	text-align: center;
+	padding: 5% 0;
+	width: 300px;
+	height: 100%;
+}
+
+#lateral-menu img {
+	display: block;
+	margin: 0 auto 45px auto;
+	width: 170px;
+}
+
+#lateral-menu #menu-icon {
+	display: none;
+}
+
+#lateral-menu ul {
+	padding: 0;
+}
+
+#lateral-menu li {
+	padding-bottom: 10px;
+	list-style: none;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#lateral-menu li a {
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+#lateral-menu a:hover {
+	color: #00D2FC;
+}
+
+#lateral-menu footer {
+	position: absolute;
+	text-align: left;
+	bottom: 0;
+	left: 0;
+}
+
+#lateral-menu footer a {
+	color: #fff;
+	font-size: 1.7em;
+	text-decoration: none;
+	transition: all 0.5s;
+	margin-left: 10px;
+}
+
+
+
+
+
+/*----- DIV DOS CONTEÚDOS -----*/
+#div-content {
+	background-image: url(../image/banner.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	margin-left: 300px;
+	padding: 0;
+}
+
+#div-content > div:not(:first-child) {
+	background-color: #000;
+	
+}
+
+#div-content footer {
+	text-align: right;
+	color: #fff;
+	background-color: #000;
+	border-top: double 3px #00A8C9;
+	padding: 15px;
+}
+
+#div-content footer p {
+	margin: 0;
+	font-size: 1.2em;
+}
+
+#div-content div:not(:first-child) h1 {
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 50px 0 50px 25px;
+}
+
+#div-content div:not(:first-child) h1::after {
+	content: '';
+	height: 10px;
+	position: absolute;
+	width: 100%;
+	background-color: #00A8C9;
+	bottom: 4px;
+	left: 25px;
+	z-index: -1;
+}
+
+
+
+
+
+/*----- BANNER -----*/
+#banner {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+#banner h1 {
+	position: absolute;
+	color: #fff;
+	right: 40px;
+	top: 177px;
+	width: 50%;
+	text-align: right;
+	font-size: 2em;
+}
+
+
+
+
+
+/*----- PORTIFÓLIO -----*/
+#div-portifolio .col-sm-4 {
+	padding: 0;
+}
+
+#div-portifolio .portifolio-image {
+	display: relative;
+}
+
+#div-portifolio .portifolio-image .image-hover {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 0%;
+	left: 0;
+	bottom: 0;
+	background-color: transparent;
+	transition: all 0.5s;
+}
+
+#div-portifolio .portifolio-image .image-hover h2 {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 0 15px;
+} 
+
+#div-portifolio .portifolio-image:hover .image-hover {
+	height: 100%;
+	background-color: #00A8C988;
+}
+
+#div-portifolio .portifolio-image img {
+	transition: all 1s;
+}
+
+#div-portifolio .portifolio-image:hover img {
+	filter: blur(1px);
+}
+
+
+
+
+
+/*----- SOBRE -----*/
+#div-about #div-about-me div p {
+	text-align: justify;
+}
+
+#div-about > div {
+	padding: 0 25px;
+}
+
+#div-about .skill-percentage {
+	background-color: #555;
+	overflow: auto;
+	margin: 20px 0 0 0;
+	width: 100%;
+}
+
+#div-about .skill-percentage > * {
+	float: left;
+}
+
+#div-about .skill {
+	background-color: #00687D;
+	padding: 2px 0;
+	width: 125px;
+	text-align: center;
+}
+
+#div-about .percentage {
+	display: inline-block;
+	width: calc(100% - 125px); /* Os 125px é para descontar o width da class skill */
+}
+
+#div-about .percentage .percentage-bar {
+	text-align: right;
+	padding: 2px 0;
+	background-color: #00A8C9;
+	padding-right: 10px;
+}
+
+
+
+
+
+/*----- SERVIÇOS ----*/
+#div-service > .row {
+	padding: 0 20px;
+}
+
+.service {
+	text-align: center;
+	padding: 20px 10px;
+}
+
+.service h2 {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: #00D2FC;
+}
+
+.service-description {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.hex-wrap {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+}
+.hexagon {
+    background-color: #00A8C9;
+    height: 100%;
+    width: calc(100% * 0.57735);
+    display: inline-block;
+}
+.hexagon::after {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(-60deg);
+}
+.hexagon::before {
+    position: absolute;
+    top: 0;
+    right: calc((100% / 2) - ((100% * 0.57735) / 2));
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    content: '';
+    transform: rotateZ(60deg);
+}
+.hexagon i {
+    position: absolute;
+    top: 13px;
+    font-size: 5em;
+    color: #fff;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+
+
+/*----- CONTATO -----*/
+#div-contact #description-contact {
+	color: #00D2FC;
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 50px
+}
+
+#contact-form {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	overflow: auto;
+	padding-bottom: 50px;
+}
+
+#contact-form .form-group {
+	margin-bottom: 3px;
+}
+
+#contact-form .helper {
+	vertical-align: top;
+	display: none;
+	border-radius: 0 0 5px 0;
+	padding: 1px 10px;
+	background-color: #D22215;
+	color: #000;
+}
+
+#contact-form input, #contact-form textarea {
+	border: none;
+	border-radius: 0;
+	background-color: #111;
+	color: #ddd;
+}
+
+#contact-form textarea {
+	min-height: 150px;
+	resize: vertical;
+}
+
+#contact-form .invalid-input {
+	border-left: 3px solid #D22215;
+}
+
+#contact-form input:focus,
+#contact-form input:active,
+#contact-form textarea:focus,
+#contact-form textarea:active {
+  outline: 0;
+  box-shadow: none;
+}
+
+#contact-form button {
+	float: right;
+	margin-top: 10px;
+	padding: 10px 25px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 0;
+	color: #fff;
+	transition: all 0.5s;
+}
+
+#contact-form button:hover {
+	background-color: #00A8C9;
+	border-color: #00D2FC;
+}

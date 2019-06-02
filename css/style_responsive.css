@@ -1,0 +1,156 @@
+/*----- RESOLUÇÃO MAIOR OU IGUAL A 768px -----*/
+@media only screen and (min-width: 768px) {
+	body > .container {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/*----- RESOLUÇÃO MAIOR OU IGUAL A 1366px -----*/
+@media only screen and (min-width: 1366px) {
+	body > .container {
+		width: 1366px;
+		padding: 0;
+	}
+}
+
+/*----- RESOLUÇÃO MENOR OU IGUAL A 1199px -----*/
+@media only screen and (max-width: 1199px) {
+	#div-about img {
+		width: 400px;
+		display: block;
+		margin: 0 auto 30px auto
+	}
+}
+
+/*----- RESOLUÇÃO MENOR OU IGUAL A 991px -----*/
+@media only screen and (max-width: 991px) {
+	#div-content {
+		background-size: 136%;
+		background-position: -100px 50px;
+	}
+
+	#lateral-menu {
+		text-align: left;
+		padding: 0;
+		width: 100%;
+		height: 53px;
+		border-bottom: double #00D2FC 3px;
+		z-index: 2;
+	}
+
+	#lateral-menu img {
+		display: block;
+		position: absolute;
+		top: 10px;
+		width: 80px;
+		left: calc(50% - 40px); /* Os 40px é para descontar a metade do width da img */
+		z-index: 3;
+	}
+
+	#lateral-menu #menu-icon {
+		font-size: 2.5em;
+		position: absolute;
+		right: 20px;
+		top: -0.5px;
+		cursor: pointer;
+		color: #fff;
+		display: block;
+		transition: all 0.5s;
+	}
+
+	#lateral-menu #menu-icon:hover {
+		color: #00D2FC;
+	}
+
+	#lateral-menu nav {
+		position: absolute;
+		top: 53px; /* É a mesma altura do #lateral-menu */
+		right: 0;
+		background-color: #000;
+		width: 50%;
+		z-index: 2;
+		border: double #00D2FC 3px;
+		border-top: none;
+		border-right: none;
+		display: none;
+	}
+
+	#lateral-menu ul {
+		margin: 0;
+	}
+
+	#lateral-menu li {
+		padding: 10px 25px;
+		text-align: right;
+	}
+
+	#lateral-menu li:hover {
+		border-top: solid #00D2FC 1px;
+		border-bottom: solid #00D2FC 1px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		background-color: #111;
+	}
+
+	#lateral-menu footer {
+		height: 50px;
+	}
+
+	#lateral-menu footer a {
+		font-size: 1.8em;
+		display: inline-block;
+		margin-top: 6.75px; /* Metade do height do a do footer menos a metade do height do footer */
+	}
+
+	#lateral-menu footer a:first-child {
+		margin-left: 20px;
+	}
+	
+	#div-content {
+		margin-left: 0;
+	}
+}
+
+/*----- RESOLUÇÃO MENOR OU IGUAL A 767px -----*/
+@media only screen and (max-width: 767px) {
+	body > .container {
+		padding: 0;	
+	}
+
+	#lateral-menu nav {
+		width: 100%;
+		border-left: none;
+	}
+
+	#div-content {
+		background-size: 190%;
+		background-position: -181px 50px;
+	}
+
+	#banner h1 {
+		width: 70%;
+	}
+
+	#contact-form {
+		margin: 0;
+		padding: 0 25px 50px 25px;
+		width: 100%;
+	}
+}
+
+/*----- RESOLUÇÃO MENOR OU IGUAL A 500px -----*/
+@media only screen and (max-width: 500px) {
+	#div-content {
+		background-size: 270%;
+		background-position: -235px 50px;
+	}
+
+	#banner h1 {
+		width: 90%;
+	}
+
+	#div-about img {
+		width: 100%;	
+	}
+}
