@@ -43,6 +43,11 @@ $(document).ready(function() {
 
 		}
 	});
+	
+	// Observa quando for clicado no ícone do menu
+	$('#menu-icon').click(function() {
+		$('#lateral-menu nav').slideToggle('slow');
+	});
 
 	// Verifica se o formulário foi preenchido corretamente
 	function verifyForm() {
